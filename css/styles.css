@@ -137,6 +137,10 @@ em {
     text-shadow: 0px 1px 0px #FFF;
 }
 
+img {
+    margin: auto;
+}
+
 .about hr {
     width: 200px;
     height: 2px;
@@ -266,6 +270,14 @@ html.full>body>div.navbar.navbar-default>div.navbar-collapse.collapse>ul.nav.nav
     .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
         color: #DDC4D2;
     }
+    .about h1,
+    .about p.subh1 {
+        text-align: center;
+    }
+}
+
+.about ul {
+    padding-left: 20px;
 }
 
 .dropdown-menu>li>a {
@@ -354,6 +366,9 @@ footer .btn.focus,
         width: 98%;
         margin: 1%;
         height: 100%;
+    }
+    .socialmediafeed {
+        height: 400px;
     }
 }
 
