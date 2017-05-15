@@ -393,6 +393,7 @@ ul.nav.navbar-nav>li>a {
 
 /*---------------------------------------------------------------*/
 
+
 /* LOGO */
 
 div.navbar-header>a>img.img-responsive {
@@ -412,9 +413,21 @@ div.navbar-header>a>img.img-responsive {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 874px) {
+    div.navbar-header>a>img.img-responsive {
+        padding-left: 324.5px;
+        padding-right: 324.5px;
+    }
+    ul.nav.navbar-nav {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 767px) {
     div.navbar-header>a>img.img-responsive {
         padding-left: 59px;
+        padding-right: 0;
+        margin-left: auto;
     }
 }
 
@@ -424,9 +437,12 @@ div.navbar-header>a>img.img-responsive {
     }
 }
 
+
 /* LOGO */
 
+
 /*---------------------------------------------------------------*/
+
 
 /* BOOTSTRAP COLUMN WIDTH */
 
