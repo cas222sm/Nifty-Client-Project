@@ -393,6 +393,40 @@ ul.nav.navbar-nav>li>a {
 
 /*---------------------------------------------------------------*/
 
+/* LOGO */
+
+div.navbar-header>a>img.img-responsive {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    div.navbar-header>a>img.img-responsive {
+        margin-left: 15px;
+    }
+}
+
+@media (min-width: 874px) {
+    ul.nav.navbar-nav {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    div.navbar-header>a>img.img-responsive {
+        padding-left: 59px;
+    }
+}
+
+@media (max-width: 344px) {
+    div.navbar-header>a>img.img-responsive {
+        padding-right: 59px;
+    }
+}
+
+/* LOGO */
+
+/*---------------------------------------------------------------*/
 
 /* BOOTSTRAP COLUMN WIDTH */
 
