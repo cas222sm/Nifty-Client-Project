@@ -97,6 +97,11 @@ body {
     font-weight: bold;
 }
 
+article>p>a {
+    color: #AEA600;
+    font-weight: bold;
+}
+
 
 /* EMPHASIZE LINK */
 
@@ -327,6 +332,36 @@ footer .btn.focus,
     list-style-image: url(../img/compass-bullet.png);
 }
 
+.centerit {
+    text-align: center;
+}
+
+.rightit {
+    text-align: right;
+}
+
+a:focus,
+a:hover {
+    color: #CCC;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out 0s;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+.videoresponse {
+    max-width: 344px;
+    max-height: 240px;
+}
+
+.embed-responsive-4by3 {}
+
+ul.nav.navbar-nav>li>a {
+    text-transform: uppercase;
+}
+
 
 /* TEXT STYLING */
 
@@ -374,7 +409,7 @@ footer .btn.focus,
 
 @media (min-width: 768px) {
     .col-sm-6 {
-        width: 48%;
+        width: 46%;
         margin: 1%;
         height: 611px;
     }
@@ -388,7 +423,7 @@ footer .btn.focus,
 
 @media (min-width: 902px) {
     .col-sm-6 {
-        width: 43%;
+        width: 42%;
         margin: 1%;
         height: 611px;
     }
