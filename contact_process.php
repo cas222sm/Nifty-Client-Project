@@ -1,7 +1,7 @@
 <?php
 
 $EmailFrom = Trim(stripslashes($_POST['email'])); 
-$EmailTo = "formcatcher@gmail.com";
+$EmailTo = "steven.manning@pcc.edu";
 $Subject = "CAS 222 Contact Form Test Steven Manning";
 $Name = Trim(stripslashes($_POST['name']));
 $Date = Trim(stripslashes($_POST['date']));
