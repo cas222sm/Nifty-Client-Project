@@ -79,9 +79,7 @@ body {
 .quote,
 .slideshow,
 .about,
-.socialmediafeed {
-    height: 611px;
-}
+.socialmediafeed {}
 
 
 /* COLUMN HEIGHT */
@@ -97,7 +95,8 @@ body {
     font-weight: bold;
 }
 
-article>p>a {
+article>p>a,
+article>address>p>a {
     color: #AEA600;
     font-weight: bold;
 }
@@ -167,6 +166,25 @@ hr {
     -webkit-margin-end: auto;
     border-style: inset;
     border-width: 1px;
+}
+
+.ok {
+    height: 200px;
+}
+
+@media (min-height: 500px) and (min-width: 1200px) {
+    .static {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+article>p>a.error {
+    color: #482D3C;
+}
+
+article>p>a.error:hover {
+    color: #DDC4D2;
 }
 
 
@@ -336,8 +354,34 @@ footer .btn.focus,
     text-align: center;
 }
 
+.dropdown-menu>.active>a {
+    color: #AEA600;
+    background-color: transparent;
+}
+
 .rightit {
     text-align: right;
+}
+
+.removeit {
+    display: none;
+}
+
+.centerit {
+    text-align: center;
+}
+
+.dropdown-menu>.active>a,
+.dropdown-menu>.active>a:focus,
+.dropdown-menu>.active>a:hover {
+    color: #AEA600;
+    background-color: transparent;
+}
+
+.nav .open>a,
+.nav .open>a:focus,
+.nav .open>a:hover {
+    border-color: transparent;
 }
 
 a:focus,
@@ -459,9 +503,8 @@ div.navbar-header>a>img.img-responsive {
 
 @media (min-width: 768px) {
     .col-sm-6 {
-        width: 46%;
+        width: 48%;
         margin: 1%;
-        height: 611px;
     }
     .quote,
     .special,
@@ -473,16 +516,13 @@ div.navbar-header>a>img.img-responsive {
 
 @media (min-width: 902px) {
     .col-sm-6 {
-        width: 42%;
+        width: 48%;
         margin: 1%;
-        height: 611px;
     }
     .quote,
     .special,
     .slideshow,
-    .about {
-        height: 611px;
-    }
+    .about {}
     .slideshow,
     .about {
         height: 100%;
@@ -493,7 +533,6 @@ div.navbar-header>a>img.img-responsive {
     .col-md-4 {
         width: 31.3%;
         margin: 1%;
-        height: 611px;
     }
 }
 
@@ -501,7 +540,6 @@ div.navbar-header>a>img.img-responsive {
     .col-lg-4 {
         width: 31.3%;
         margin: 1%;
-        height: 611px;
     }
 }
 
