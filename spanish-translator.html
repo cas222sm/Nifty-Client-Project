@@ -31,10 +31,43 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="fingerprint.js"></script>
+
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-100014765-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
 
 </head>
 
 <body>
+
+    <div id="fb-root"></div>
+
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+    </script>
 
     <div class="topyellowbar"></div>
     <div class="toppurplebar"></div>
@@ -160,12 +193,21 @@
                 <p>If not, then read on</p>
 
             </article>
-            
+
             <div class="clearfix visible-sm-block"></div>
 
             <article class="col-xs-12 col-sm-6 col-md-4 col-lg-4 socialmediafeed">
 
-                <h2>Social Media Feed</h2>
+                <div class="twitter-page">
+                    <a class="twitter-timeline" data-height="200" href="https://twitter.com/pcccas222">Tweets by pcccas222</a>
+                    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+
+                <div class="facebook-page">
+                    <div class="fb-page" data-href="https://www.facebook.com/cas222cascade/" data-tabs="timeline" data-width="500" data-height="265" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false">
+                        <blockquote cite="https://www.facebook.com/cas222cascade/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/cas222cascade/">CAS 222</a></blockquote>
+                    </div>
+                </div>
 
             </article>
 

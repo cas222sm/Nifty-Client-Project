@@ -59,7 +59,8 @@ body {
 
 .tours,
 .special,
-.quote {
+.quote,
+.socialmediafeed {
     background-color: #745577;
     border: 5px solid #DED400;
     color: #DDC4D2;
@@ -81,7 +82,17 @@ body {
 .about,
 .socialmediafeed {}
 
+@media (max-height: 992px) {
+    .tours {
+        height: 520px;
+    }
+}
 
+@media (max-height: 768px) {
+    .socialmediafeed {
+        height: 520px;
+    }
+}
 /* COLUMN HEIGHT */
 
 
@@ -186,7 +197,6 @@ article>p>a.error {
 article>p>a.error:hover {
     color: #DDC4D2;
 }
-
 
 /*
 
@@ -406,6 +416,59 @@ ul.nav.navbar-nav>li>a {
     text-transform: uppercase;
 }
 
+th {
+    font-family: Varela, Arial, Helvetica, sans-serif;
+    background-color: #482D3C;
+    color: #B07995;
+}
+
+th, td {
+    border: 1px solid #482D3C;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table>tbody>tr>td {
+    vertical-align: middle;
+    border-top: 1px solid #482D3C;
+}
+
+.table {
+    margin-bottom: 10px;
+}
+
+.carousel-control.right {
+    background-image: none;
+}
+
+.carousel-control.left {
+    background-image: none;
+}
+
+.mapthing {
+    width: 100%;
+}
+
+video {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 10px;
+    width: 100% !important;
+    height: auto !important;
+}
+
+.twitter-page, .facebook-page {
+}
+
+.twitter-page {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.facebook-page {
+    margin-bottom: 15px;
+}
 
 /* TEXT STYLING */
 
@@ -496,9 +559,6 @@ div.navbar-header>a>img.img-responsive {
         margin: 1%;
         height: 100%;
     }
-    .socialmediafeed {
-        height: 400px;
-    }
 }
 
 @media (min-width: 768px) {
@@ -543,7 +603,6 @@ div.navbar-header>a>img.img-responsive {
     }
 }
 
-
 /* BOOTSTRAP COLUMN WIDTH */
 
 
@@ -553,8 +612,7 @@ div.navbar-header>a>img.img-responsive {
 /* SOCIAL MEDIA FEED */
 
 .socialmediafeed {
-    background-color: white;
-    border: solid black 5px;
+    
 }
 
 
@@ -586,8 +644,9 @@ footer {
 /* IMAGE PADDING */
 
 .img-responsive {
-    padding-top: 15px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-height: 330px;
 }
 
 
