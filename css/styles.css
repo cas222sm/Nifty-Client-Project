@@ -82,17 +82,6 @@ body {
 .about,
 .socialmediafeed {}
 
-@media (max-height: 992px) {
-    .tours {
-        height: 520px;
-    }
-}
-
-@media (max-height: 768px) {
-    .socialmediafeed {
-        height: 520px;
-    }
-}
 /* COLUMN HEIGHT */
 
 
@@ -470,6 +459,28 @@ video {
     margin-bottom: 15px;
 }
 
+@media (min-width: 769px) {
+    
+    div#myCarousel {
+        display: block;
+    }
+    
+    img.img-responsive.slideshowreplacer {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    div#myCarousel {
+        display: none;
+    }
+    
+    img.img-responsive.slideshowreplacer {
+        display: block;
+    }
+}
+
 /* TEXT STYLING */
 
 
@@ -559,6 +570,55 @@ div.navbar-header>a>img.img-responsive {
         margin: 1%;
         height: 100%;
     }
+    
+    .col-xs-12.socialmediafeed {
+        width: 50%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    
+}
+
+@media (max-width: 668px) {
+    .col-xs-12.socialmediafeed {
+        width: 58%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        margin-left: 21%;
+        margin-right: 21%;
+    }
+}
+
+@media (max-width: 568px) {
+    .col-xs-12.socialmediafeed {
+        width: 68%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        margin-left: 16%;
+        margin-right: 16%;
+    }
+}
+
+@media (max-width: 468px) {
+    .col-xs-12.socialmediafeed {
+        width: 78%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        margin-left: 11%;
+        margin-right: 11%;
+    }
+}
+
+@media (max-width: 368px) {
+    .col-xs-12.socialmediafeed {
+        width: 88%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        margin-left: 6%;
+        margin-right: 6%;
+    }
 }
 
 @media (min-width: 768px) {
@@ -566,6 +626,15 @@ div.navbar-header>a>img.img-responsive {
         width: 48%;
         margin: 1%;
     }
+    
+    .col-sm-6.socialmediafeed {
+        width: 44%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        margin-left: 5%;
+        margin-right: 1%;
+    }
+    
     .quote,
     .special,
     .slideshow,
@@ -601,8 +670,21 @@ div.navbar-header>a>img.img-responsive {
         width: 31.3%;
         margin: 1%;
     }
+    
+    .col-lg-4.socialmediafeed {
+        width: 19.3%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        margin-left: 1%;
+        margin-right: 13%;
+    }
 }
 
+@media (min-width: 992px) {
+    .col-lg-offset-4 {
+        margin-left: 34.33333333%;
+    }
+}
 /* BOOTSTRAP COLUMN WIDTH */
 
 
@@ -612,7 +694,7 @@ div.navbar-header>a>img.img-responsive {
 /* SOCIAL MEDIA FEED */
 
 .socialmediafeed {
-    
+    text-align: center;
 }
 
 
