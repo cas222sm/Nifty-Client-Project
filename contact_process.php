@@ -1,13 +1,14 @@
 <?php
 
 $EmailFrom = Trim(stripslashes($_POST['email'])); 
-$EmailTo = "steven.manning@pcc.edu";
+$EmailTo = "duder5495@gmail.com";
 $Subject = "CAS 222 Contact Form Test Steven Manning";
 $Name = Trim(stripslashes($_POST['name']));
 $Date = Trim(stripslashes($_POST['date']));
 $Tours = Trim(stripslashes(implode(" ", $_POST['tours'])));
 $Comments = Trim(stripslashes($_POST['comments']));
 $current_date = gmDate("Y-m-d");
+$Fingerprint = Trim(stripslashes($_POST['result']));
 
 $validationOK=true;
 if (Trim($EmailFrom)=="") $validationOK=false;
@@ -26,6 +27,10 @@ fclose ($myPointer);
 $Body = "";
 $Body .= "Name: ";
 $Body .= $Name;
+$Body .= "\n";
+$Body .= "\n";
+$Body .= "Fingerprint: ";
+$Body .= $Fingerprint;
 $Body .= "\n";
 $Body .= "\n";
 $Body .= "Date of Trip Desired: ";

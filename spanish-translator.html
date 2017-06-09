@@ -32,18 +32,19 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     
-    <script src="js/client.min.js"></script>
-    
+    <!-- Google Analytics -->
     <script>
+        
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-        var client = new ClientJS(); // Create A New Client Object
+      ga('create', 'UA-100014765-1', 'auto');
+      ga('send', 'pageview');
 
-        var fingerprint = client.getFingerprint(); // Get Client's Fingerprint
-
-        console.log( fingerprint );
-
-    </script> 
-
+    </script>
+    
 </head>
 
 <body>
@@ -126,8 +127,6 @@
 
                     </li>
 
-                    <li><a href="nifty-tours-blog">Stories</a></li>
-
                     <li><a href="contact.html">Contact Us<span class="caret"></span></a>
 
                         <ul class="dropdown-menu">
@@ -192,7 +191,7 @@
             <article class="col-xs-12 col-sm-6 col-md-4 col-lg-4 socialmediafeed">
 
                 <div class="twitter-page">
-                    <a class="twitter-timeline" data-height="200" href="https://twitter.com/pcccas222">Tweets by pcccas222</a>
+                    <a class="twitter-timeline" data-height="200" data-width="500" href="https://twitter.com/pcccas222">Tweets by pcccas222</a>
                     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </div>
 
@@ -213,6 +212,8 @@
                 <p>Suspendisse et orci et arcu porttitor pellentesque. Sed lacus nunc, fermentum vel, vehicula in, imperdiet eget, urna. Nam consectetuer euismod nunc. Nulla dignissim posuere nulla. Integer iaculis lacinia massa. Nullam sapien augue, condimentum vel, venenatis id, rhoncus pellentesque, sapien. Donec sed ipsum ultrices turpis consectetuer imperdiet. Duis et ipsum ac nisl laoreet commodo. Mauris eu est. Suspendisse id turpis quis orci euismod consequat. Donec tellus mi, luctus sit amet, ultrices a, convallis eu, lorem. Proin faucibus convallis elit. Maecenas rhoncus arcu at arcu. Proin libero. Proin adipiscing. In quis lorem vitae elit consectetuer pretium. Nullam ligula urna, adipiscing nec, iaculis ut, elementum non, turpis. Fusce pulvinar.</p>
 
             </article>
+            
+            <div class="clearfix visible-xs-block visible-sm-block"></div>
 
             <article class="col-xs-12 col-sm-6 col-md-4 col-lg-4 special">
 
